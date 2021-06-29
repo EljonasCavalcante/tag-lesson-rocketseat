@@ -1,0 +1,33 @@
+<!--
+  <input typer="url"
+
+  - espera que o usuário digite um url
+  -Irá validar se o valor digitado é uma url
+
+  #Atributos
+  -placehold
+  -readonly / disabled
+  -value
+  -required
+  -munlegth / maxlegth
+  - size
+  - pattern usar expressões regulares para validar o campo
+  *exemplo: o usuário só poderá colocar domínio .com.br
+          *pattern=.*\.com\.br/.*
+
+  -spellcheck 
+   * verificar a ortografia para o input
+-->
+
+<datalist id="urldata">
+  <option >http://exemplo.com.br</option>
+  <option >http://exemplo.com.br</option>
+</datalist>
+ <form action="">
+   <input type="url" 
+   placeholder="http://exemplo.com.br"
+   pattern=".*\.com\.br/.*" 
+   required
+   list="urldata">
+   <button type="submit" >Enviar</button>
+ </form>
