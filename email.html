@@ -1,0 +1,32 @@
+<!--
+  <input typer="email"
+
+  #atributos
+  -placeholder
+  -readonly / disebled
+  - required obrigatório
+  - multiple
+  * o campo  ira receber 1 ou mais emails separado por virgulas
+
+  ninlength / maxlegth
+  * o mínimo e ou maximo valor que o campo irá conter
+  
+  size
+  * uso de expresão regular para validar o campo
+  exemplo : o usuário só poderá colocar o email do dominio rocketseat.com.br
+  
+  - list 
+  * o id de uma tag <datalist> que não forem compativel com o campo, não serão apresentados com sugestões
+-->
+
+<form action="" placeholder= "email">
+  
+  <datalist id="emaillist"  >
+    <option>eljonascavalcante@gmail.com</option>
+  </datalist>
+  <input placeholder= "email" type="email" list="emaillist" >
+  <button type="submit" >enviar</button>
+
+  
+
+</form>
